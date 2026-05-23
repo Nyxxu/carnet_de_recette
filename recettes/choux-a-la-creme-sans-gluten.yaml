@@ -1,0 +1,53 @@
+titre: Choux à la crème sans gluten
+slug: choux-a-la-creme-sans-gluten
+categorie: dessert
+portions: 6
+temps_preparation_min: 30
+temps_cuisson_min: 25
+contient: []
+tags: [gouter]
+image: ""
+
+sections:
+  - titre: Pâte à choux
+    ingredients:
+      - nom: farine mix pâtisserie Schär
+        quantite: 150
+        unite: g
+      - nom: oeufs
+        quantite: 4
+      - nom: margarine sans lactose
+        quantite: 100
+        unite: g
+      - nom: eau
+        quantite: 250
+        unite: g
+      - nom: sirop d'agave
+        quantite: 10
+        unite: cl
+      - nom: sucre de coco
+      - nom: sel
+        quantite: 1
+        unite: pincée
+    etapes: []
+
+  - titre: Crème pâtissière
+    ingredients:
+      - nom: gousse de vanille
+        quantite: 1
+      - nom: oeufs
+        quantite: 2
+      - nom: sirop d'agave
+        quantite: 20
+        unite: cl
+      - nom: lait de riz ou d'amande
+        quantite: 25
+        unite: cl
+      - nom: mix pâtisserie Schär
+        quantite: 30
+        unite: g
+    etapes: []
+
+notes: |
+  Étapes de préparation à compléter — non détaillées sur le site source.
+  Recette pour environ 25 choux.

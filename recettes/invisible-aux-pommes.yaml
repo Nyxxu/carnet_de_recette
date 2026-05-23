@@ -1,0 +1,38 @@
+titre: Invisible aux pommes
+slug: invisible-aux-pommes
+categorie: dessert
+portions: 6
+temps_preparation_min: 15
+temps_cuisson_min: 45
+contient: []
+tags: [gouter]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: farine mix pâtisserie Schär
+        quantite: 80
+        unite: g
+      - nom: huile de coco
+        quantite: 40
+        unite: g
+      - nom: lait de riz
+        quantite: 20
+        unite: cl
+      - nom: oeufs
+        quantite: 4
+      - nom: levure chimique
+        quantite: 1
+        unite: sachet
+      - nom: pommes Pink Lady
+        quantite: 6
+      - nom: sirop d'agave
+        quantite: 20
+        unite: cl
+    etapes:
+      - Préchauffer le four à 180°C.
+      - Éplucher les pommes, les couper en quartiers puis en fines lamelles de 2 mm.
+      - Mélanger les oeufs entiers avec le sirop d'agave, la farine, la levure, l'huile de coco et le lait de riz.
+      - Incorporer les lamelles de pommes et bien les enrober de pâte.
+      - Verser le mélange dans un plat à cake.
+      - Cuire 45 minutes à 180°C.

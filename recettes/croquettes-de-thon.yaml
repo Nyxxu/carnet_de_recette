@@ -1,0 +1,41 @@
+titre: Croquettes de thon
+slug: croquettes-de-thon
+categorie: entree
+portions: 4
+temps_preparation_min: 15
+temps_cuisson_min: 4
+contient: []
+tags: [apero]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: thon au naturel en boîte
+        quantite: 1
+        unite: boîte
+        details: 385 à 400 g
+      - nom: oeufs
+        quantite: 3
+      - nom: Petit Crisp Schär
+        quantite: 1
+        unite: paquet
+      - nom: cumin en poudre
+        quantite: 1
+        unite: c. à café
+      - nom: piment d'Espelette
+        quantite: 1
+        unite: c. à café
+      - nom: sel
+      - nom: poivre
+      - nom: huile de tournesol
+        details: 2 à 3 mm dans la poêle pour la cuisson
+    etapes:
+      - Égoutter au maximum le thon, l'eau doit être complètement retirée.
+      - Émietter le thon, ajouter les oeufs, brasser, puis incorporer sel, poivre, cumin et piment. Mélanger.
+      - Mixer les 3/4 du paquet de Petit Crisp pour obtenir une chapelure.
+      - Ajouter la chapelure au mélange thon/oeuf et bien tasser.
+      - Former des boulettes plates de 4 cm × 4 cm.
+      - Faire cuire à feu fort dans l'huile environ 2 minutes de chaque côté.
+      - Servir chaud ou froid.
+
+notes: Aussi bon chaud que froid.

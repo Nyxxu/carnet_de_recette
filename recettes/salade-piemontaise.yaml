@@ -1,0 +1,35 @@
+titre: Salade Piémontaise
+slug: salade-piemontaise
+categorie: plat
+portions: 4
+temps_preparation_min: 15
+temps_cuisson_min: 30
+contient: []
+tags: [ete, familial]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: oeufs
+        quantite: 5
+      - nom: pommes de terre moyennes
+        quantite: 10
+      - nom: tomates
+        quantite: 4
+      - nom: cornichons
+        quantite: 15
+      - nom: dés de jambon Herta
+        quantite: 1
+        unite: paquet
+      - nom: moutarde douce
+      - nom: huile de tournesol
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Cuire les pommes de terre à l'eau jusqu'à tendreté (20 à 30 minutes), les laisser refroidir et les éplucher.
+      - Cuire 4 oeufs 5 minutes après ébullition pour une cuisson mollet.
+      - Découper en dés les tomates, cornichons, oeufs et pommes de terre, et les verser dans un saladier.
+      - Ajouter les dés de jambon Herta.
+      - Préparer la mayonnaise. Fouetter le jaune du 5ᵉ oeuf avec 5 c. à café de moutarde, puis incorporer l'huile progressivement en fouettant. Assaisonner.
+      - Mélanger la mayonnaise aux légumes et au jambon.
+      - Servir.

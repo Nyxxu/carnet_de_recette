@@ -1,0 +1,39 @@
+titre: Fondant au chocolat
+slug: fondant-au-chocolat
+categorie: dessert
+portions: 6
+temps_preparation_min: 10
+temps_cuisson_min: 25
+contient: []
+tags: [chocolat, gouter]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: chocolat noir pâtissier
+        quantite: 200
+        unite: g
+      - nom: beurre demi-sel
+        quantite: 180
+        unite: g
+        details: ou margarine sans lactose
+      - nom: sucre en poudre
+        quantite: 200
+        unite: g
+      - nom: oeufs
+        quantite: 4
+      - nom: farine
+        quantite: 2
+        unite: c. à soupe
+        details: farine sans gluten
+    etapes:
+      - Préchauffer le four à 180°C.
+      - Couper le beurre et le chocolat en cubes et les mettre à fondre à feu doux.
+      - Attendre que le mélange soit homogène et liquide.
+      - Ajouter le sucre, mélanger.
+      - Garder le mélange sur feu doux.
+      - Ajouter un oeuf, délayer, répéter l'opération pour les 3 autres.
+      - Ajouter la farine, mélanger.
+      - Mettre le mélange dans un plat et enfourner au moins 25 minutes, jusqu'à ce que la pointe d'un couteau ressorte propre.
+
+notes: La cuisson est terminée lorsque la pointe d'un couteau ressort propre du gâteau.

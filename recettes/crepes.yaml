@@ -1,0 +1,28 @@
+titre: Crêpes
+slug: crepes
+categorie: dessert
+portions: 4
+temps_preparation_min: 5
+temps_cuisson_min: 20
+contient: []
+tags: [gouter, rapide]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: lait de riz
+        quantite: 37
+        unite: cl
+      - nom: farine sans gluten
+        quantite: 164
+        unite: g
+      - nom: oeufs
+        quantite: 3
+    etapes:
+      - Battre les oeufs.
+      - Ajouter le lait de riz, délayer.
+      - Ajouter la farine petit à petit pour éviter les grumeaux.
+      - Cuire à la crêpière chaude.
+      - Déguster les crêpes chaudes avec de la confiture, du sucre de coco ou du citron.
+
+notes: Recette pour environ 6 grandes crêpes.

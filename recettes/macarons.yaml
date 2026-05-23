@@ -1,0 +1,26 @@
+titre: Macarons
+slug: macarons
+categorie: dessert
+portions: 6
+temps_preparation_min: 0
+temps_cuisson_min: 0
+contient: []
+tags: [gouter]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: sucre glace
+        quantite: 130
+        unite: g
+      - nom: poudre d'amandes
+        quantite: 80
+        unite: g
+      - nom: blancs d'oeufs
+        quantite: 2
+      - nom: sucre en poudre
+        quantite: 30
+        unite: g
+    etapes: []
+
+notes: Étapes de préparation à compléter — non renseignées sur le site source.

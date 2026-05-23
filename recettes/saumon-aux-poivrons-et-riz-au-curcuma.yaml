@@ -1,0 +1,39 @@
+titre: Saumon aux poivrons et riz au curcuma
+slug: saumon-aux-poivrons-et-riz-au-curcuma
+categorie: plat
+portions: 2
+temps_preparation_min: 10
+temps_cuisson_min: 25
+contient: []
+tags: [rapide]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: filets de saumon
+        quantite: 2
+        details: frais ou congelé
+      - nom: poivron
+        quantite: 1
+      - nom: oignon
+        quantite: 1
+      - nom: citron jaune bio
+        quantite: 1
+      - nom: curcuma
+        quantite: 3
+        unite: c. à café
+      - nom: riz
+        details: quantité selon préférence
+      - nom: huile d'olive
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Préchauffer le four à 180°C en mode chaleur tournante.
+      - Verser un filet d'huile d'olive au fond du plat.
+      - Placer le saumon dessus.
+      - Couper le citron en deux, verser son jus sur le saumon, saler, poivrer et répartir les morceaux pressés.
+      - Découper l'oignon et le poivron en lamelles, les répartir autour du saumon, saler et poivrer.
+      - Verser un filet d'huile d'olive sur les légumes.
+      - Enfourner 20 minutes pour du saumon frais, 45 minutes pour du congelé.
+      - Cuire le riz 10 minutes, l'égoutter, ajouter huile d'olive, sel, poivre et curcuma. Mélanger.
+      - Servir le saumon avec les légumes et le riz au curcuma.

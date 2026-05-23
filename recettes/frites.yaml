@@ -1,0 +1,27 @@
+titre: Frites
+slug: frites
+categorie: plat
+portions: 2
+temps_preparation_min: 15
+temps_cuisson_min: 11
+contient: []
+tags: [accompagnement]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: pommes de terre
+        quantite: 9
+        details: assez longues et larges idéalement
+      - nom: huile d'arachide
+      - nom: sel
+    etapes:
+      - Peler les pommes de terre et les couper en tranches de 1 cm, puis en lamelles de 1 cm de largeur.
+      - Rincer 2 à 3 fois les frites crues dans de l'eau froide pour enlever l'amidon.
+      - Sécher les frites dans un torchon propre.
+      - Réaliser une première cuisson de 6 minutes à 140°C.
+      - Laisser les frites refroidir.
+      - Réaliser une seconde cuisson de 5 minutes à 180°C.
+      - Saler à la sortie de la friture.
+
+notes: La double cuisson est la clé d'une frite croustillante à l'extérieur et fondante à l'intérieur.

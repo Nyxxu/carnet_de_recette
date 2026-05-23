@@ -1,0 +1,42 @@
+titre: Chouquettes sans gluten
+slug: chouquettes-sans-gluten
+categorie: dessert
+portions: 6
+temps_preparation_min: 25
+temps_cuisson_min: 20
+contient: []
+tags: [gouter]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: farine mix pâtisserie Schär
+        quantite: 150
+        unite: g
+      - nom: oeufs
+        quantite: 5
+      - nom: margarine sans lactose
+        quantite: 100
+        unite: g
+      - nom: eau
+        quantite: 250
+        unite: g
+      - nom: sirop d'agave
+        quantite: 5
+        unite: cl
+      - nom: sel
+        quantite: 1
+        unite: pincée
+      - nom: perles de sucre
+        quantite: 50
+        unite: g
+    etapes:
+      - Préchauffer le four à 200°C.
+      - Mettre dans une casserole l'eau, la margarine et le sel à bouillir.
+      - À la première ébullition, enlever la casserole du feu et verser la farine en une fois, puis mélanger.
+      - Assécher la pâte sur le feu jusqu'à ce qu'elle se détache des parois.
+      - Hors du feu, ajouter les oeufs un par un jusqu'à obtenir une pâte lisse et compacte.
+      - Pocher les choux avec une poche à douille et ajouter les perles de sucre sur chaque chouquette.
+      - Faire cuire 20 minutes.
+
+notes: Recette pour environ 25 chouquettes.

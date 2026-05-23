@@ -1,0 +1,41 @@
+titre: Chakchouka
+slug: chakchouka
+categorie: plat
+portions: 4
+temps_preparation_min: 15
+temps_cuisson_min: 66
+contient: []
+tags: [vegetarien]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: courgettes
+        quantite: 4
+        details: 4 à 5 selon la taille
+      - nom: poivrons rouges
+        quantite: 3
+      - nom: tomates
+        quantite: 3
+      - nom: oeufs
+        quantite: 7
+      - nom: semoule sans gluten
+      - nom: piment doux
+        quantite: 2
+        unite: c. à café
+      - nom: herbes de Provence
+      - nom: huile d'olive
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Préchauffer le four à 180°C en chaleur tournante.
+      - Éplucher les courgettes, les couper en deux dans la longueur, puis à nouveau en deux et découper en morceaux d'1 cm.
+      - Couper les poivrons en tranches de 1 cm.
+      - Couper les tomates en quarts puis en tranches de 0,5 cm.
+      - Verser de l'huile d'olive au fond du plat et ajouter l'ensemble des légumes.
+      - Assaisonner avec sel, poivre, piment doux et herbes de Provence, puis mélanger.
+      - Faire cuire 60 minutes au four en brassant à mi-cuisson.
+      - Après 45 minutes, faire 7 petits trous dans les légumes pour y verser les oeufs.
+      - Faire cuire les oeufs 6 minutes à 180°C.
+      - Réhydrater la semoule avec de l'eau bouillante, puis la faire revenir dans une casserole avec de l'huile d'olive.
+      - Servir 1 à 2 oeufs par portion avec la semoule.

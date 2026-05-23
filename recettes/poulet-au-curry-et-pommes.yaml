@@ -1,0 +1,60 @@
+titre: Poulet au curry et aux pommes
+slug: poulet-au-curry-et-pommes
+categorie: plat
+portions: 4
+temps_preparation_min: 15
+temps_cuisson_min: 50
+contient: []
+tags: [familial]
+image: ""
+
+sections:
+  - titre: Plat principal
+    ingredients:
+      - nom: filets de poulet
+        quantite: 4
+      - nom: oignons
+        quantite: 2
+      - nom: pommes Gala ou Pink Lady
+        quantite: 4
+      - nom: curcuma moulu
+        quantite: 2
+        unite: c. à café
+      - nom: cumin moulu
+        quantite: 2
+        unite: c. à café
+      - nom: coriandre moulue
+        quantite: 1
+        unite: c. à café
+      - nom: piment doux
+        quantite: 1
+        unite: c. à café
+      - nom: crème de coco
+        quantite: 1
+        unite: brique
+        details: 200 ml
+      - nom: eau
+        quantite: 700
+        unite: ml
+      - nom: huile d'olive
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Découper les filets de poulet en cubes de 2 cm.
+      - Éplucher les oignons, les couper en deux et émincer finement.
+      - Dans une sauteuse avec un filet d'huile d'olive, faire cuire le poulet et les oignons.
+      - Faire bouillir 700 ml d'eau dans une casserole.
+      - Ajouter les épices au poulet doré, bien mélanger.
+      - Verser l'eau chaude sur le poulet et laisser réduire 40 minutes.
+      - Éplucher les pommes, les couper en cubes de 2 cm et les ajouter à la préparation.
+      - Ajouter la crème de coco et laisser réduire jusqu'à obtenir une sauce onctueuse.
+
+  - titre: Riz
+    ingredients:
+      - nom: riz
+        quantite: 100
+        unite: g
+    etapes:
+      - Cuire le riz selon les instructions du paquet.
+
+notes: Rajouter de l'eau si nécessaire durant la réduction.

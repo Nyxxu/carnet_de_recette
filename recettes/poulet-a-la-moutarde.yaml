@@ -1,0 +1,36 @@
+titre: Poulet à la moutarde
+slug: poulet-a-la-moutarde
+categorie: plat
+portions: 4
+temps_preparation_min: 8
+temps_cuisson_min: 12
+contient: []
+tags: [rapide, familial]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: filets de poulet
+        quantite: 3
+        details: frais, évitez le poulet congelé
+      - nom: riz cuisine
+        quantite: 2
+        unite: briques
+        details: 200 ml chacune
+      - nom: moutarde forte
+        quantite: 6
+        unite: c. à café
+      - nom: sel
+      - nom: poivre
+      - nom: huile d'olive
+      - nom: petits pois ou haricots verts en conserve
+        quantite: 1
+        unite: grande boîte
+        details: au choix, selon préférence
+    etapes:
+      - Couper grossièrement les filets de poulet en gros cubes (3 cm).
+      - Préparer la sauce en mélangeant le riz cuisine, la moutarde, le sel et le poivre.
+      - Faire revenir les cubes de poulet dans une poêle avec de l'huile d'olive. Laisser dorer sans cuire complètement (environ 5 minutes à feu fort).
+      - Ajouter la sauce au poulet et laisser réduire jusqu'à ce qu'elle devienne onctueuse (6 à 7 minutes). Remuer continuellement pour éviter qu'elle brûle.
+      - En parallèle, réchauffer les petits pois ou les haricots verts dans une casserole.
+      - Servir une fois que la sauce a épaissi.

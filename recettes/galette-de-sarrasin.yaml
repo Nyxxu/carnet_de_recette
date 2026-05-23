@@ -1,0 +1,27 @@
+titre: Galettes de sarrasin
+slug: galette-de-sarrasin
+categorie: plat
+portions: 5
+temps_preparation_min: 5
+temps_cuisson_min: 10
+contient: []
+tags: [rapide, base]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: farine de sarrasin sans gluten
+        quantite: 150
+        unite: g
+      - nom: eau
+        quantite: 375
+        unite: ml
+      - nom: oeuf
+        quantite: 1
+    etapes:
+      - Mélanger la farine avec l'eau, puis ajouter l'oeuf en dernier et fouetter bien.
+      - Chauffer la galettière jusqu'à ce qu'elle soit bien chaude.
+      - Verser une louche entière de pâte. Retourner la galette quand les bords se décollent.
+      - Faire cuire 1 minute sur l'autre côté.
+
+notes: Recette de base utilisée pour les galettes roulées apéritives.

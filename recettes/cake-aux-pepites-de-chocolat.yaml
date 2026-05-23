@@ -1,0 +1,40 @@
+titre: Cake aux pépites de chocolat
+slug: cake-aux-pepites-de-chocolat
+categorie: dessert
+portions: 6
+temps_preparation_min: 15
+temps_cuisson_min: 45
+contient: []
+tags: [gouter, chocolat]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: farine mix pâtisserie Schär
+        quantite: 250
+        unite: g
+      - nom: margarine sans lactose
+        quantite: 120
+        unite: g
+      - nom: lait de riz
+        quantite: 25
+        unite: cl
+      - nom: oeufs
+        quantite: 2
+      - nom: levure chimique
+        quantite: 1
+        unite: sachet
+      - nom: pistoles de chocolat sans gluten
+        quantite: 150
+        unite: g
+      - nom: sirop d'agave
+        quantite: 20
+        unite: cl
+    etapes:
+      - Préchauffer le four à 210°C.
+      - Mélanger la margarine avec le sirop d'agave.
+      - Ajouter les oeufs entiers.
+      - Ajouter le lait à la préparation.
+      - Ajouter la farine et la levure chimique.
+      - Mixer les pistoles de chocolat sans gluten pour obtenir des pépites et les ajouter à la préparation.
+      - Cuire 10 minutes à 210°C puis 35 minutes à 160°C.

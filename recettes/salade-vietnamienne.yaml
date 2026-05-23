@@ -1,0 +1,71 @@
+titre: Salade vietnamienne
+slug: salade-vietnamienne
+categorie: plat
+portions: 2
+temps_preparation_min: 20
+temps_cuisson_min: 15
+contient: []
+tags: [ete]
+image: ""
+
+sections:
+  - titre: Base
+    ingredients:
+      - nom: escalopes de poulet
+        quantite: 2
+      - nom: vermicelles de riz
+        quantite: 100
+        unite: g
+      - nom: carottes
+        quantite: 2
+      - nom: mâche
+        details: pour la salade
+      - nom: cacahuètes râpées
+    etapes: []
+
+  - titre: Marinade
+    ingredients:
+      - nom: sauce nuoc mam
+        quantite: 1
+        unite: c. à soupe
+      - nom: sauce soja sucrée sans gluten
+        quantite: 1
+        unite: c. à soupe
+      - nom: gousse d'ail râpée
+        quantite: 1
+      - nom: gingembre moulu
+        quantite: 0.5
+        unite: c. à café
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Couper le poulet en tranches fines de 0,5 cm.
+      - Préparer la marinade en mélangeant tous les ingrédients de la marinade.
+      - Arroser le poulet de marinade et laisser mariner au moins 1 heure.
+
+  - titre: Sauce
+    ingredients:
+      - nom: sauce nuoc mam
+        quantite: 1
+        unite: c. à soupe
+      - nom: jus de citron vert
+        quantite: 1
+        unite: c. à soupe
+      - nom: vinaigre de cidre ou de riz
+        quantite: 1
+        unite: c. à soupe
+      - nom: huile de sésame
+        quantite: 1
+        unite: c. à soupe
+      - nom: sirop d'agave
+        quantite: 3
+        unite: cl
+    etapes:
+      - Mélanger tous les ingrédients de la sauce dans un bol.
+
+  - titre: Cuisson et dressage
+    etapes:
+      - Râper les carottes.
+      - Faire cuire les vermicelles selon les indications de l'emballage.
+      - Faire cuire le poulet dans une poêle avec un filet d'huile de sésame et le jus de marinade. Dorer environ 10 minutes.
+      - Dresser. Mâche en base, vermicelles, carottes, viande, sauce, cacahuètes hachées sur le dessus.

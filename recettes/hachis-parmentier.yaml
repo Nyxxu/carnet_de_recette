@@ -1,0 +1,64 @@
+titre: Hachis parmentier
+slug: hachis-parmentier
+categorie: plat
+portions: 4
+temps_preparation_min: 25
+temps_cuisson_min: 65
+contient: []
+tags: [familial]
+image: ""
+
+sections:
+  - titre: Garniture viande
+    ingredients:
+      - nom: viande hachée de boeuf
+        quantite: 550
+        unite: g
+      - nom: oignons
+        quantite: 2
+      - nom: cumin moulu
+        quantite: 1
+        unite: c. à café
+      - nom: piment doux
+        quantite: 1
+        unite: c. à café
+      - nom: huile d'olive
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Éplucher les oignons et les mixer pour les réduire en petits morceaux.
+      - Faire suer les oignons dans une poêle avec un peu d'huile d'olive.
+      - Ajouter la viande, mélanger, saler, poivrer.
+      - Incorporer le cumin et le piment, laisser cuire.
+
+  - titre: Purée
+    ingredients:
+      - nom: pommes de terre
+        quantite: 2
+        unite: kg
+      - nom: huile de coco solide
+        quantite: 5
+        unite: c. à soupe
+      - nom: noix de muscade râpée
+        quantite: 1
+        unite: c. à soupe
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Éplucher les pommes de terre et les couper en gros morceaux.
+      - Les cuire 40 à 45 minutes dans l'eau bouillante.
+      - Égoutter et écraser les pommes de terre.
+      - Détendre avec l'huile de coco, saler, poivrer et ajouter la muscade.
+
+  - titre: Dressage et cuisson
+    ingredients:
+      - nom: Petit Crisp Schär
+        quantite: 1
+        unite: paquet
+    etapes:
+      - Préchauffer le four à 180°C.
+      - Diviser la purée en deux. Mettre la première moitié au fond du plat.
+      - Disposer la viande par-dessus.
+      - Recouvrir avec la seconde moitié de purée.
+      - Mixer les Petit Crisp pour obtenir une chapelure fine et la répartir sur le dessus.
+      - Enfourner 20 minutes.

@@ -1,0 +1,71 @@
+titre: Nems
+slug: nems
+categorie: plat
+portions: 4
+temps_preparation_min: 45
+temps_cuisson_min: 10
+contient: []
+tags: [festif, coup-de-coeur]
+image: ""
+
+sections:
+  - titre: Farce
+    ingredients:
+      - nom: viande de porc haché
+        quantite: 250
+        unite: g
+        details: chair à saucisse
+      - nom: carottes râpées
+        quantite: 125
+        unite: g
+      - nom: oignons hachés
+        quantite: 125
+        unite: g
+      - nom: vermicelles de riz
+        quantite: 50
+        unite: g
+      - nom: champignons noirs déshydratés
+        quantite: 20
+        unite: g
+      - nom: oeuf
+        quantite: 1
+      - nom: sauce nuoc mam
+        quantite: 2
+        unite: c. à soupe
+      - nom: huile de sésame
+        quantite: 1
+        unite: c. à soupe
+      - nom: sirop d'agave
+        quantite: 3
+        unite: g
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Faire bouillir de l'eau pour cuire les vermicelles et hydrater les champignons.
+      - Cuire les vermicelles selon les instructions, rincer et couper en morceaux de 3 à 4 cm.
+      - Laisser les champignons 10 minutes dans l'eau bouillante.
+      - Peler et râper les carottes.
+      - Mixer les oignons et les champignons noirs hydratés.
+      - Hacher la viande de porc.
+      - Mélanger viande, carottes, oignons, champignons, vermicelles, oeuf, sel, poivre, sauce nuoc mam, huile de sésame et sirop d'agave.
+
+  - titre: Roulage et cuisson
+    ingredients:
+      - nom: feuilles de riz pour nems
+        quantite: 20
+        details: 20 cm de diamètre
+      - nom: crème de coco
+        quantite: 8
+        unite: cl
+      - nom: eau
+        quantite: 3
+        unite: cl
+      - nom: huile d'arachide
+        details: pour la friture
+    etapes:
+      - Préparer les feuilles. Diluer la crème de coco dans 3 cl d'eau chaude, badigeonner et coller les feuilles.
+      - Rouler les nems. Déposer la farce, rabattre le bas, replier les côtés, rouler jusqu'au bout.
+      - Frire à 170°C pendant 5 minutes.
+      - Puis à 190°C pendant 3 à 5 minutes avant de servir.
+
+notes: Recette pour environ 20 nems.

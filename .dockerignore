@@ -1,0 +1,40 @@
+# Versionnement
+.git/
+.gitignore
+.gitattributes
+
+# Outils Claude Code / agents
+.claude/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Artefacts de build locaux (le builder Docker repart de zéro)
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+coverage.out
+coverage.html
+
+# CI/CD : pas besoin dans l'image runtime
+.github/
+
+# Documentation locale (CLAUDE.md, README.md restent dans le repo mais pas dans l'image)
+CLAUDE.md
+README.md
+
+# Dockerfile et son dossier (pas besoin dans l'image)
+deploy/
+.dockerignore

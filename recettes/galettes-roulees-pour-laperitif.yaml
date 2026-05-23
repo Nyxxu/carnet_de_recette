@@ -1,0 +1,61 @@
+titre: Galettes roulées pour l'apéritif
+slug: galettes-roulees-pour-laperitif
+categorie: entree
+portions: 8
+temps_preparation_min: 30
+temps_cuisson_min: 0
+contient: []
+tags: [apero]
+image: ""
+
+sections:
+  - titre: Variante saumon-coco
+    ingredients:
+      - nom: galettes de sarrasin
+        quantite: 5
+      - nom: tranches de saumon fumé
+        quantite: 4
+      - nom: crème de coco
+        quantite: 200
+        unite: ml
+      - nom: citron jaune bio
+        quantite: 1
+      - nom: oeufs de lump rouge
+        quantite: 1
+        unite: boîte
+      - nom: piment doux
+        quantite: 1
+        unite: c. à café
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Mélanger la crème de coco, le jus de citron, sel, poivre et piment doux.
+      - Étaler la sauce sur la galette, ajouter le saumon fumé puis les oeufs de lump.
+      - Rouler la galette en cylindre serré.
+      - Découper en tronçons de 2 cm et servir.
+
+  - titre: Variante jambon-mayonnaise
+    ingredients:
+      - nom: galettes de sarrasin
+        quantite: 5
+      - nom: oeuf
+        quantite: 1
+      - nom: moutarde douce
+        quantite: 4
+        unite: c. à café
+      - nom: huile de tournesol
+        details: pour la mayonnaise (20 à 30 ml)
+      - nom: cornichons
+        quantite: 15
+      - nom: tranches de jambon blanc
+        quantite: 4
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Préparer la mayonnaise. Mélanger le jaune d'oeuf et la moutarde, fouetter en ajoutant 20 à 30 ml d'huile progressivement, assaisonner.
+      - Mixer les cornichons et les incorporer à la mayonnaise.
+      - Étaler la sauce sur la galette, ajouter le jambon blanc.
+      - Rouler la galette en cylindre serré.
+      - Découper en tronçons de 2 cm et servir.
+
+notes: Préparer les galettes de sarrasin selon la recette dédiée avant de commencer. Recette pour environ 40 mini-roulés.

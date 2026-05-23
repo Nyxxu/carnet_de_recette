@@ -1,0 +1,41 @@
+titre: Muffins aux framboises
+slug: muffins-aux-framboises
+categorie: dessert
+portions: 5
+temps_preparation_min: 10
+temps_cuisson_min: 20
+contient: []
+tags: [gouter]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: farine mix pâtisserie Schär
+        quantite: 80
+        unite: g
+      - nom: levure chimique
+        quantite: 1
+        unite: sachet
+        details: Ma Vie Sans Gluten
+      - nom: framboises
+        quantite: 30
+        details: 25 à 30, fraîches ou décongelées
+      - nom: oeufs
+        quantite: 3
+      - nom: crème de coco
+        quantite: 1
+        unite: brique
+        details: 200 ml
+      - nom: sirop d'agave
+        quantite: 5
+        unite: cl
+    etapes:
+      - Préchauffer le four à 200°C.
+      - Battre les oeufs, ajouter la crème de coco et mélanger.
+      - Intégrer progressivement la farine et la levure chimique.
+      - Ajouter les framboises et bien brasser pour les répartir dans la pâte.
+      - Incorporer le sirop d'agave.
+      - Verser la préparation dans les moules à muffins.
+      - Cuire 20 minutes à 200°C.
+
+notes: Recette pour environ 10 muffins.

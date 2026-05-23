@@ -1,0 +1,37 @@
+titre: Crumble pomme rhubarbe
+slug: crumble-pomme-rhubarbe
+categorie: dessert
+portions: 6
+temps_preparation_min: 15
+temps_cuisson_min: 30
+contient: []
+tags: [ete, gouter]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: farine mix pâtisserie Schär
+        quantite: 200
+        unite: g
+      - nom: margarine sans lactose
+        quantite: 125
+        unite: g
+      - nom: sucre de coco
+        quantite: 125
+        unite: g
+      - nom: brins de rhubarbe
+        quantite: 8
+        details: gros brins
+      - nom: pommes Gala
+        quantite: 4
+      - nom: sirop d'agave
+        quantite: 5
+        unite: cl
+    etapes:
+      - Préchauffer le four à 180°C.
+      - Laver les fruits, les éplucher et les couper en cubes de 2 cm.
+      - Déposer les fruits coupés sur le fond du plat à tarte et répartir le sirop d'agave.
+      - Mélanger la farine et le sucre de coco dans un bol, ajouter la margarine coupée en morceaux.
+      - Brasser le mélange avec les mains jusqu'à obtenir une texture de "sable".
+      - Verser la pâte de crumble sur les fruits.
+      - Faire cuire 30 minutes à 180°C.

@@ -1,0 +1,68 @@
+titre: Lasagnes
+slug: lasagnes
+categorie: plat
+portions: 4
+temps_preparation_min: 30
+temps_cuisson_min: 30
+contient: []
+tags: [familial]
+image: ""
+
+sections:
+  - titre: Garniture viande
+    ingredients:
+      - nom: viande hachée de boeuf
+        quantite: 500
+        unite: g
+      - nom: oignon
+        quantite: 1
+      - nom: tomates pelées en boîte
+        quantite: 1
+        unite: boîte
+        details: 400 g
+      - nom: cumin moulu
+        quantite: 1
+        unite: c. à café
+      - nom: piment doux
+        quantite: 1
+        unite: c. à café
+      - nom: huile d'olive
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Éplucher l'oignon, le couper en deux et émincer chaque moitié en tranches fines.
+      - Dans une sauteuse avec un filet d'huile d'olive, faire cuire le boeuf et les oignons.
+      - Ajouter les épices, le sel, le poivre et la boîte de tomates pelées.
+      - Laisser réduire légèrement et réserver.
+
+  - titre: Béchamel sans lactose
+    ingredients:
+      - nom: mix pâtisserie Schär
+        quantite: 50
+        unite: g
+      - nom: huile neutre
+        quantite: 10
+        unite: cl
+        details: tournesol ou coco
+      - nom: crème de coco
+        quantite: 2
+        unite: briques
+        details: 200 ml chacune
+      - nom: eau
+        quantite: 400
+        unite: ml
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Mélanger la farine et l'huile dans une casserole et mettre sur le feu.
+      - Ajouter rapidement la crème de coco et l'eau, fouetter jusqu'à épaississement.
+      - Saler et poivrer.
+
+  - titre: Montage
+    ingredients:
+      - nom: pâte à lasagne sans gluten
+        details: Ma vie sans Gluten ou Valpibio
+    etapes:
+      - Dans un plat à terrine, alterner les couches de pâte, de viande et de béchamel.
+      - Terminer par une couche de pâte recouverte de béchamel.
+      - Enfourner 30 minutes au four à 180°C.

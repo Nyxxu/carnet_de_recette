@@ -1,0 +1,65 @@
+titre: Tarte soleil apéritive
+slug: tarte-soleil-aperitive
+categorie: entree
+portions: 6
+temps_preparation_min: 20
+temps_cuisson_min: 45
+contient: []
+tags: [apero]
+image: ""
+
+sections:
+  - titre: Variante tomate-jambon
+    ingredients:
+      - nom: pâtes feuilletées sans gluten
+        quantite: 2
+      - nom: tomates concassées en boîte
+        quantite: 1
+        unite: boîte moyenne
+      - nom: tranches de jambon blanc
+        quantite: 2
+      - nom: piment doux
+        quantite: 1
+        unite: c. à café
+      - nom: herbes de Provence
+        quantite: 3
+        unite: c. à café
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Réduire les tomates avec sel, poivre, piment et herbes de Provence dans une casserole.
+      - Couper le jambon en dés de 1 cm et l'ajouter à la préparation.
+
+  - titre: Variante saumon-coco
+    ingredients:
+      - nom: pâtes feuilletées sans gluten
+        quantite: 2
+      - nom: crème de coco
+        quantite: 1
+        unite: brique
+        details: 200 ml
+      - nom: tranches de saumon fumé
+        quantite: 4
+      - nom: citron jaune bio
+        quantite: 1
+      - nom: piment doux
+        quantite: 1
+        unite: c. à café
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Mélanger la crème de coco, le jus de citron, sel, poivre et piment doux dans un bol.
+
+  - titre: Montage et cuisson
+    etapes:
+      - Préchauffer le four à 180°C en chaleur tournante.
+      - Étaler la première pâte feuilletée sur la plaque de cuisson.
+      - Répartir la garniture de la variante choisie sur la pâte.
+      - Recouvrir avec la seconde pâte feuilletée.
+      - Poser un verre (5 à 6 cm de diamètre) au centre sans appuyer.
+      - Découper des tranches de 2 cm de large depuis les bords du verre (25 à 30 tranches au total).
+      - Torsader doucement chaque tranche sans détacher le centre.
+      - Enfourner 40 à 45 minutes.
+      - Servir les torsades cuites aux invités.
+
+notes: Choisir une variante (tomate-jambon ou saumon-coco). Le montage et la cuisson sont identiques dans les deux cas.

@@ -1,0 +1,69 @@
+name: Build & Deploy to Scaleway
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+env:
+  # À adapter avec le nom du Container Registry namespace créé dans la console Scaleway.
+  SCW_REGION: fr-par
+  SCW_REGISTRY_NAMESPACE: namespace-carnet-de-recette
+  IMAGE_NAME: carnet-de-recette
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Scaleway Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: rg.${{ env.SCW_REGION }}.scw.cloud/${{ env.SCW_REGISTRY_NAMESPACE }}
+          # Convention Scaleway : username arbitraire ("nologin" par convention),
+          # le secret key sert de mot de passe.
+          username: nologin
+          password: ${{ secrets.SCW_SECRET_KEY }}
+
+      - name: Build and push image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          # Le Dockerfile est rangé dans deploy/ pour garder la racine du repo
+          # propre. Le contexte de build reste à la racine car le binaire embarque
+          # recettes/, images/ et templates/ via //go:embed.
+          file: ./deploy/Dockerfile
+          push: true
+          tags: rg.${{ env.SCW_REGION }}.scw.cloud/${{ env.SCW_REGISTRY_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
+          # Cache GitHub Actions natif : accélère les builds suivants en
+          # réutilisant les couches Docker non changées (notamment `go mod download`).
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      # Prépare la condition de redéploiement : GitHub interdit `secrets.*` dans
+      # un `if:`, donc on transforme le secret en sortie de step.
+      - name: Check if redeploy is configured
+        id: check_redeploy
+        run: |
+          if [ -n "${{ secrets.SCW_CONTAINER_ID }}" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::SCW_CONTAINER_ID n'est pas configuré — étape de redéploiement skippée. Créer le Serverless Container côté Scaleway puis ajouter le secret SCW_CONTAINER_ID."
+          fi
+
+      - name: Trigger Scaleway redeploy
+        if: steps.check_redeploy.outputs.configured == 'true'
+        run: |
+          curl --fail-with-body -sS -X POST \
+            "https://api.scaleway.com/containers/v1beta1/regions/${{ env.SCW_REGION }}/containers/${{ secrets.SCW_CONTAINER_ID }}/deploy" \
+            -H "X-Auth-Token: ${{ secrets.SCW_SECRET_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{}'
+          echo ""
+          echo "::notice::Redéploiement Scaleway déclenché. Suivre l'avancement dans la console Serverless Containers > Revisions."

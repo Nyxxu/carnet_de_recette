@@ -1,0 +1,42 @@
+titre: Pot au feu
+slug: pot-au-feu
+categorie: plat
+portions: 4
+temps_preparation_min: 25
+temps_cuisson_min: 60
+contient: []
+tags: [familial, hiver, batch-cooking]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: paleron de boeuf
+        quantite: 500
+        unite: g
+      - nom: jarret de boeuf
+        quantite: 500
+        unite: g
+      - nom: pommes de terre
+        quantite: 1.5
+        unite: kg
+      - nom: carottes
+        quantite: 10
+      - nom: poireaux
+        quantite: 6
+      - nom: oignons
+        quantite: 2
+      - nom: bouquets garnis
+        quantite: 2
+      - nom: sel
+      - nom: poivre
+      - nom: eau
+    etapes:
+      - Éplucher tous les légumes.
+      - Dégraisser la viande et la couper en gros morceaux (7 cm × 7 cm minimum).
+      - Mettre la viande, les légumes, le bouquet garni, du sel et du poivre dans la cocotte-minute. Couvrir d'eau au niveau maximum.
+      - Faire cuire 1 heure à partir du moment où la cocotte commence à siffler.
+      - Servir chaud ou froid, avec le bouillon ou de la mayonnaise maison.
+
+notes: |
+  Mayonnaise maison : 1 jaune d'oeuf, 3 cuillères à café de moutarde, huile de tournesol, sel et poivre.
+  Fouetter le jaune d'oeuf avec la moutarde et incorporer l'huile progressivement.

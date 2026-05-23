@@ -1,0 +1,37 @@
+# Binaire compilé du projet (multi-OS, multi-arch)
+/carnet-de-recette
+/carnet-de-recette.exe
+/carnet_de_recette
+/carnet_de_recette.exe
+
+# Artefacts de build Go
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Couverture de tests
+coverage.out
+coverage.html
+
+# Modules / dépendances vendored
+/vendor/
+
+# IDE / éditeurs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs / fichiers locaux
+*.log
+.env
+.env.local

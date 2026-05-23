@@ -1,0 +1,50 @@
+titre: Brioche
+slug: brioche
+categorie: dessert
+portions: 6
+temps_preparation_min: 60
+temps_cuisson_min: 15
+contient: []
+tags: [gouter]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: mix pain Schär
+        quantite: 380
+        unite: g
+      - nom: huile
+        quantite: 8
+        unite: cl
+      - nom: levure chimique
+        quantite: 1
+        unite: sachet
+      - nom: levure boulangère
+        quantite: 2
+        unite: c. à soupe
+      - nom: eau tiède
+        quantite: 45
+        unite: cl
+      - nom: sirop d'agave
+        quantite: 80
+        unite: g
+      - nom: oeuf
+        quantite: 1
+        details: pour la dorure
+      - nom: sel
+        quantite: 1
+        unite: pincée
+    etapes:
+      - Verser l'eau tiède dans un grand bol.
+      - Incorporer le sachet de levure boulangère, le sirop d'agave et l'huile, bien mélanger.
+      - Ajouter la farine mix Schär, une pincée de sel et la levure chimique, bien mélanger.
+      - Couvrir et laisser reposer 30 minutes.
+      - Fariner le plan de travail.
+      - Diviser la pâte en 4 baguettes égales sans trop la travailler.
+      - Placer du papier cuisson sur une planche allant au four.
+      - Tresser 2 brioches avec les 4 baguettes sur le papier cuisson.
+      - Couvrir et laisser reposer 30 minutes (ou 50°C au four si la température ambiante est insuffisante).
+      - Battre un oeuf pour badigeonner les brioches.
+      - Cuire 15 minutes à 200°C avec un bol d'eau au fond du four.
+
+notes: Ne pas trop travailler la pâte pour éviter qu'elle ne redescende.

@@ -1,0 +1,46 @@
+titre: Mini-quiches apéritives
+slug: mini-quiches-aperitives
+categorie: entree
+portions: 8
+temps_preparation_min: 20
+temps_cuisson_min: 20
+contient: []
+tags: [apero]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: pâtes feuilletées sans gluten
+        quantite: 2
+      - nom: oeufs
+        quantite: 4
+      - nom: crème de coco
+        quantite: 1
+        unite: brique
+        details: 200 ml
+      - nom: huile d'olive
+        quantite: 10
+        unite: cl
+      - nom: thon en boîte
+        quantite: 1
+        unite: boîte moyenne
+      - nom: piment doux
+        quantite: 1
+        unite: c. à café
+      - nom: persil
+        quantite: 2
+        unite: c. à soupe
+        details: frais ou congelé
+      - nom: moutarde douce
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Préchauffer le four à 180°C en chaleur tournante.
+      - Étaler la pâte feuilletée et réaliser des ronds avec un verre (5 à 6 cm de diamètre).
+      - Placer les ronds dans chaque emplacement d'un moule à muffins.
+      - Étaler un peu de moutarde au fond de chaque mini-quiche.
+      - Préparer l'appareil en mélangeant oeufs, crème de coco, huile d'olive, thon, persil, sel, poivre et piment doux.
+      - Verser l'appareil dans les mini-quiches sans dépasser la hauteur de la pâte.
+      - Enfourner 20 minutes.
+
+notes: Recette pour environ 40 mini-quiches.

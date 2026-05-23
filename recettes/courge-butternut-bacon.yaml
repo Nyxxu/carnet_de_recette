@@ -1,0 +1,30 @@
+titre: Courge butternut au bacon
+slug: courge-butternut-bacon
+categorie: plat
+portions: 2
+temps_preparation_min: 10
+temps_cuisson_min: 45
+contient: []
+tags: [hiver, rapide]
+image: ""
+
+sections:
+  - ingredients:
+      - nom: courge butternut
+        quantite: 1
+      - nom: tranches de bacon Herta
+        quantite: 10
+        unite: paquet
+        details: 1 paquet
+      - nom: herbes de Provence
+        quantite: 2
+        unite: c. à café
+      - nom: huile d'olive
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Préchauffer le four à 180°C en chaleur tournante.
+      - Éplucher la butternut, la couper en deux, la vider de ses pépins et la tailler en cubes de 1,5 à 2 cm.
+      - Verser huile d'olive, sel, poivre et herbes de Provence sur les cubes. Enfourner 45 minutes.
+      - À 30 minutes de cuisson, ajouter le bacon coupé en dés, mélanger bien, puis enfourner 15 minutes supplémentaires.
+      - Servir la courge accompagnée de salade.

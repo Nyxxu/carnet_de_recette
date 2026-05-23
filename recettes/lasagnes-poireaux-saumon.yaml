@@ -1,0 +1,69 @@
+titre: Lasagnes poireaux saumon
+slug: lasagnes-poireaux-saumon
+categorie: plat
+portions: 4
+temps_preparation_min: 25
+temps_cuisson_min: 70
+contient: []
+tags: [familial]
+image: ""
+
+sections:
+  - titre: Saumon
+    ingredients:
+      - nom: pavé de saumon
+        quantite: 1
+        details: 500 à 700 g
+      - nom: citron jaune bio
+        quantite: 1
+      - nom: huile d'olive
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Préchauffer le four à 180°C en chaleur tournante.
+      - Cuire le saumon au four 20 minutes avec sel, poivre, jus de citron et huile d'olive.
+      - Émietter le saumon une fois cuit.
+
+  - titre: Poireaux
+    ingredients:
+      - nom: poireaux
+        quantite: 5
+      - nom: oignon
+        quantite: 1
+      - nom: huile d'olive
+      - nom: eau
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Couper l'oignon et les poireaux en lamelles.
+      - Cuire à l'huile d'olive avec un peu d'eau, sel et poivre pendant 20 minutes à couvert.
+      - Égoutter le mélange poireaux-oignon.
+
+  - titre: Béchamel et montage
+    ingredients:
+      - nom: crème de coco
+        quantite: 2
+        unite: briques
+        details: 200 ml chacune
+      - nom: eau
+        quantite: 400
+        unite: ml
+      - nom: farine mix pâtisserie Schär
+        quantite: 3
+        unite: c. à soupe
+      - nom: huile de tournesol
+        quantite: 4
+        unite: c. à soupe
+      - nom: noix de muscade
+        quantite: 2
+        unite: c. à café
+      - nom: pâte à lasagne sans gluten
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Préparer la béchamel en mélangeant farine, huile de tournesol, crème de coco et eau. Assaisonner.
+      - Combiner le saumon émietté et le mélange poireaux-oignon égoutté.
+      - Assembler les lasagnes en alternant pâte, garniture saumon-poireaux et béchamel.
+      - Enfourner 30 minutes à 180°C.
+
+notes: Idéalement préparer les lasagnes la veille pour qu'elles se tiennent mieux lors du service.

@@ -1,0 +1,62 @@
+titre: Poulet au caramel
+slug: poulet-au-caramel
+categorie: plat
+portions: 2
+temps_preparation_min: 15
+temps_cuisson_min: 25
+contient: []
+tags: [familial]
+image: ""
+
+sections:
+  - titre: Préparation de la viande
+    ingredients:
+      - nom: filets de poulet frais
+        quantite: 2
+      - nom: oignon
+        quantite: 1
+      - nom: gingembre moulu
+        quantite: 1
+        unite: c. à café
+      - nom: huile d'olive
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Découper les filets de poulet en tranches très fines (5 mm).
+      - Éplucher l'oignon, le couper en deux et émincer chaque moitié en tranches fines.
+
+  - titre: Sauce caramel
+    ingredients:
+      - nom: miel de printemps
+        quantite: 3
+        unite: c. à soupe
+      - nom: vinaigre de cidre
+        quantite: 2
+        unite: c. à soupe
+      - nom: gingembre moulu
+        quantite: 1
+        unite: c. à café
+      - nom: muscade moulue
+        quantite: 1
+        unite: c. à café
+      - nom: piment doux ou piment d'Espelette
+        quantite: 1
+        unite: c. à café
+      - nom: sel
+      - nom: poivre
+    etapes:
+      - Préparer la sauce en mélangeant tous les ingrédients dans un bol.
+
+  - titre: Cuisson et service
+    ingredients:
+      - nom: riz
+        quantite: 600
+        unite: g
+    etapes:
+      - Lancer la cuisson du riz selon les instructions du paquet.
+      - Verser un filet d'huile d'olive dans une casserole assez haute.
+      - Ajouter la viande et l'oignon, saler, poivrer, ajouter le gingembre et cuire à feu moyen jusqu'à dorage léger.
+      - Verser la sauce sur le poulet doré et cuire en remuant continuellement jusqu'à caramélisation.
+      - Servir avec le riz.
+
+notes: Utiliser du poulet frais, éviter le poulet congelé. Recette sans soja.

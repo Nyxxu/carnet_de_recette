@@ -1,0 +1,198 @@
+{{define "titre"}}Carnet de recettes — Coline &amp; Maël{{end}}
+
+{{define "contenu"}}
+<!-- HERO compact -->
+<section class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-basilic-600 via-basilic-500 to-citron-400 px-5 py-4 md:px-6 md:py-5 mb-6 shadow-sticker">
+    <div class="absolute -top-10 -right-6 w-32 h-32 rounded-full bg-citron-300 opacity-40 blur-2xl pointer-events-none"></div>
+    <div class="relative flex items-center justify-between gap-4 flex-wrap">
+        <div>
+            <h1 class="font-display text-2xl md:text-3xl font-black text-white leading-tight">
+                Toutes les <span class="bg-white text-basilic-700 px-2 rounded-lg rotate-[-1deg] inline-block shadow-cartoon">meilleures</span> recettes
+            </h1>
+            <p class="text-white/90 text-sm font-medium mt-0.5">
+                {{.TotalCatalogue}} recette{{if gt .TotalCatalogue 1}}s{{end}} de Coline &amp; Maël
+            </p>
+        </div>
+        <a href="/aleatoire" class="inline-flex items-center gap-2 bg-white hover:bg-citron-100 text-basilic-700 font-display font-black px-4 py-2 rounded-full shadow-cartoon hover:-translate-y-0.5 hover:shadow-sticker transition border-2 border-white whitespace-nowrap">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="3"/>
+                <circle cx="8" cy="8" r="1.2" fill="currentColor"/>
+                <circle cx="16" cy="8" r="1.2" fill="currentColor"/>
+                <circle cx="8" cy="16" r="1.2" fill="currentColor"/>
+                <circle cx="16" cy="16" r="1.2" fill="currentColor"/>
+                <circle cx="12" cy="12" r="1.2" fill="currentColor"/>
+            </svg>
+            Surprends-moi !
+        </a>
+    </div>
+</section>
+
+<!-- BARRE DE RECHERCHE -->
+<section class="mb-8" hx-target="#resultats" hx-select="#resultats" hx-swap="outerHTML" hx-push-url="true" hx-include="#filtres input">
+    <form id="filtres" onsubmit="return false;" autocomplete="off">
+        <div class="relative mb-5">
+            <svg class="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-basilic-500 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="7"/>
+                <path d="m21 21-4.3-4.3" stroke-linecap="round"/>
+            </svg>
+            <input
+                id="recherche-input"
+                type="search"
+                name="q"
+                value="{{.Critères.Texte}}"
+                placeholder="Cherche une recette par nom (Entrée pour étendre aux ingrédients et tags)..."
+                autocomplete="off"
+                class="w-full pl-14 pr-5 py-4 rounded-full border-2 border-basilic-200 bg-white shadow-sticker focus:border-basilic-500 focus:outline-none text-lg font-medium placeholder:text-stone-400"
+                hx-get="/"
+                hx-trigger="keydown[key==='Enter']"
+            >
+        </div>
+
+        <!-- Catégories en pills -->
+        <div class="flex flex-wrap gap-2 mb-4">
+            {{range .CategoriesDisponibles}}
+            <label class="cursor-pointer">
+                <input type="radio" name="categorie" value="{{.Valeur}}" {{if .Active}}checked{{end}} class="sr-only peer" hx-get="/" hx-trigger="change">
+                <span class="inline-block px-4 py-2 rounded-full font-bold text-sm transition border-2 bg-white border-stone-200 text-stone-600 hover:border-basilic-300 hover:bg-basilic-50 peer-checked:bg-basilic-500 peer-checked:border-basilic-500 peer-checked:text-white peer-checked:shadow-sticker">
+                    {{.Libelle}}
+                </span>
+            </label>
+            {{end}}
+        </div>
+
+        <!-- Tags -->
+        {{if .TagsDisponibles}}
+        <div class="flex flex-wrap gap-2 items-center">
+            <span class="text-xs uppercase tracking-wider text-stone-500 font-bold mr-1">Filtres</span>
+            {{range .TagsDisponibles}}
+            <label class="cursor-pointer">
+                <input type="checkbox" name="tag" value="{{.}}" {{if index $.TagsSelectionnesMap .}}checked{{end}} class="sr-only peer" hx-get="/" hx-trigger="change">
+                <span class="inline-block px-3 py-1.5 rounded-full text-xs font-bold transition border-2 bg-white border-citron-200 text-citron-800 hover:border-citron-400 hover:bg-citron-50 peer-checked:bg-citron-400 peer-checked:border-citron-500 peer-checked:text-citron-900 peer-checked:shadow-sticker">
+                    {{.}}
+                </span>
+            </label>
+            {{end}}
+        </div>
+        {{end}}
+    </form>
+</section>
+
+<!-- RÉSULTATS -->
+<div id="resultats" class="resultats">
+    {{template "_resultats" .}}
+</div>
+
+<script>
+    // Filtre client instantané par titre normalisé (sans accents, insensible à la casse).
+    // Le bouton Entrée déclenche la vraie recherche backend via HTMX (titre + tags + ingrédients).
+    (function () {
+        const input = document.getElementById('recherche-input');
+        if (!input) return;
+
+        const normaliser = (s) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
+
+        function appliquer() {
+            const q = normaliser(input.value.trim());
+            document.querySelectorAll('[data-titre]').forEach((card) => {
+                const match = q === '' || card.dataset.titre.includes(q);
+                card.style.display = match ? '' : 'none';
+            });
+            document.querySelectorAll('[data-categorie-section]').forEach((section) => {
+                const visibles = section.querySelectorAll('[data-titre]:not([style*="display: none"])').length;
+                section.style.display = visibles > 0 ? '' : 'none';
+            });
+        }
+
+        input.addEventListener('input', appliquer);
+
+        // Re-applique le filtre client après un swap HTMX (changement de catégorie/tag).
+        document.body.addEventListener('htmx:afterSwap', (evt) => {
+            if (evt.detail.target && evt.detail.target.id === 'resultats') {
+                appliquer();
+            }
+        });
+    })();
+</script>
+{{end}}
+
+{{define "_resultats"}}
+{{if .FiltreActif}}
+<div class="flex items-center justify-between mb-6 flex-wrap gap-2">
+    <h2 class="font-display text-2xl md:text-3xl font-black text-basilic-700">
+        {{.NombreResultats}} résultat{{if gt .NombreResultats 1}}s{{end}}
+    </h2>
+    <a href="/" class="text-sm font-bold text-stone-500 hover:text-basilic-700 underline decoration-2 decoration-citron-400 underline-offset-4">
+        Effacer les filtres
+    </a>
+</div>
+{{end}}
+
+{{if not .Resultats}}
+<div class="bg-white rounded-2xl border-2 border-dashed border-basilic-200 p-12 text-center">
+    <p class="font-display text-2xl font-bold text-basilic-700 mb-2">Rien trouvé...</p>
+    <p class="text-stone-500">Essaye un autre mot-clé ou retire un filtre.</p>
+</div>
+{{end}}
+
+{{range .Groupes}}
+<section class="mb-12" data-categorie-section>
+    <h2 class="font-display text-3xl md:text-4xl font-black text-basilic-700 mb-6 inline-block squiggle">
+        {{.Libelle}}
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {{range .Recettes}}
+        <a href="/recette/{{.Slug}}" data-titre="{{normaliser .Titre}}" class="group relative block bg-white rounded-2xl overflow-hidden border-2 border-stone-100 hover:border-basilic-300 hover:-translate-y-1 hover:shadow-sticker transition duration-200">
+            {{if .EstCoupDeCoeur}}
+            <div class="absolute top-3 right-3 z-10 bg-tomate-500 text-white rounded-full p-2 shadow-sticker rotate-12" title="Coup de cœur">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.5-9C1 9 2.5 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 5.5 4 4 7-2.5 4.5-9.5 9-9.5 9z"/></svg>
+            </div>
+            {{end}}
+            {{if .Image}}
+            <div class="aspect-[4/3] overflow-hidden bg-citron-50">
+                <img src="/images/{{.Image}}" alt="{{.Titre}}"
+                     class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                     loading="lazy">
+            </div>
+            {{else}}
+            <div class="aspect-[4/3] bg-gradient-to-br from-citron-100 via-basilic-100 to-basilic-200 flex items-center justify-center">
+                <svg viewBox="0 0 100 100" class="w-20 h-20 opacity-80" fill="none" stroke="#225f30" stroke-width="2.5" stroke-linecap="round">
+                    <path d="M50 18 C 30 22, 16 38, 18 64 C 40 64, 60 52, 70 28 C 64 22, 58 18, 50 18 Z" fill="#5fb764"/>
+                    <path d="M50 18 C 42 32, 32 48, 22 60" stroke-width="1.8"/>
+                    <path d="M36 30 L 32 36 M 42 24 L 40 30 M 28 40 L 24 46" stroke-width="1.5"/>
+                </svg>
+            </div>
+            {{end}}
+            <div class="p-4">
+                <h3 class="font-display text-xl font-black mb-2 text-stone-900 group-hover:text-basilic-700 transition leading-tight">
+                    {{.Titre}}
+                </h3>
+                <div class="flex flex-wrap gap-x-3 gap-y-1 text-sm text-stone-500 font-medium">
+                    {{if gt .TempsTotalMin 0}}
+                    <span class="inline-flex items-center gap-1">
+                        <svg class="w-4 h-4 text-basilic-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                        {{.TempsTotalMin}} min
+                    </span>
+                    {{end}}
+                    {{if gt .Portions 0}}
+                    <span class="inline-flex items-center gap-1">
+                        <svg class="w-4 h-4 text-basilic-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M3 19c0-3 3-5 6-5s6 2 6 5"/><circle cx="17" cy="9" r="2.5"/><path d="M15 18c0-2 2-3.5 4-3.5s2.5 1 2.5 2.5"/></svg>
+                        {{.Portions}} pers.
+                    </span>
+                    {{end}}
+                </div>
+                {{if .Tags}}
+                <div class="mt-3 flex flex-wrap gap-1">
+                    {{range .Tags}}
+                    {{if ne . "coup-de-coeur"}}
+                    <span class="text-xs bg-citron-100 text-citron-800 px-2 py-0.5 rounded-full font-bold">{{.}}</span>
+                    {{end}}
+                    {{end}}
+                </div>
+                {{end}}
+            </div>
+        </a>
+        {{end}}
+    </div>
+</section>
+{{end}}
+{{end}}
