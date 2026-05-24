@@ -22,8 +22,12 @@ COPY . .
 # - GOOS=linux : cible explicite (Scaleway tourne sur Linux).
 # - -ldflags="-s -w" : strip des symboles, binaire plus léger.
 # - -trimpath : retire les chemins absolus pour des builds reproductibles.
+# La variable VERSION est injectée dans le binaire via -X main.version.
+# Elle vaut la date de build au format YYYYMMddHHmmss (UTC).
 RUN CGO_ENABLED=0 GOOS=linux \
-    go build -trimpath -ldflags="-s -w" -o /out/carnet-recette .
+    go build -trimpath \
+    -ldflags="-s -w -X main.version=$(date -u +%Y%m%d%H%M%S)" \
+    -o /out/carnet-recette .
 
 
 # =============================================================================

@@ -129,9 +129,14 @@
         {{block "contenu" .}}{{end}}
     </main>
 
-    <footer class="max-w-6xl mx-auto px-4 py-12 text-sm text-stone-500 text-center">
-        <p class="font-display text-basilic-600 text-lg font-bold mb-1">Les recettes de Coline &amp; Maël</p>
+    <footer class="max-w-6xl mx-auto px-4 py-12 text-sm text-stone-500 text-center space-y-2">
+        <p class="font-display text-basilic-600 text-lg font-bold">Les recettes de Coline &amp; Maël</p>
         <p>Le carnet qui sent bon le basilic, le citron et la tomate.</p>
+        <p class="text-xs text-stone-400 pt-2 border-t border-stone-200 mt-4">
+            Site personnel — Directeur de publication : Maël &middot;
+            Hébergé par <a href="https://www.scaleway.com" class="underline hover:text-basilic-500 transition">Scaleway SAS</a>, 8 rue de la Ville-l'Évêque, 75008 Paris
+            &middot; <span class="font-mono">v{{version}}</span>
+        </p>
     </footer>
 </body>
 </html>

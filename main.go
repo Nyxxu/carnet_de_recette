@@ -13,6 +13,10 @@ import (
 	"github.com/Nyxxu/carnet-de-recette/internal/recettes"
 )
 
+// version est injectée à la compilation via -ldflags="-X main.version=<date>".
+// Vaut "dev" lors des runs locaux (go run .).
+var version = "dev"
+
 //go:embed recettes/*.yaml
 var fichiersRecettes embed.FS
 
@@ -65,6 +69,8 @@ func chargerTemplates(systeme fs.FS) (map[string]*template.Template, error) {
 	funcs := template.FuncMap{
 		"add":        func(a, b int) int { return a + b },
 		"normaliser": recettes.Normaliser,
+		// version() dans les templates retourne la version courante du binaire.
+		"version": func() string { return version },
 	}
 
 	pages := map[string]string{
