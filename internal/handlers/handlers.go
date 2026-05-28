@@ -36,6 +36,7 @@ func (s *Serveur) Routes() http.Handler {
 	mux.HandleFunc("GET /{$}", s.handleIndex)
 	mux.HandleFunc("GET /recette/{slug}", s.handleRecette)
 	mux.HandleFunc("GET /aleatoire", s.handleAleatoire)
+	mux.HandleFunc("GET /loto", s.handleLoto)
 	mux.Handle("GET /images/", http.StripPrefix("/images/", http.FileServer(http.FS(s.imagesFS))))
 	return mux
 }
