@@ -6,8 +6,7 @@ temps_preparation_min: 45
 temps_cuisson_min: 10
 contient: []
 tags: [festif, coup-de-coeur]
-image: ""
-
+image: nems.jpg
 sections:
   - titre: Farce
     ingredients:

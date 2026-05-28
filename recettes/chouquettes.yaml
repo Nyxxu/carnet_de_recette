@@ -1,13 +1,12 @@
-titre: Chouquettes sans gluten
-slug: chouquettes-sans-gluten
+titre: Chouquettes
+slug: chouquettes
 categorie: dessert
 portions: 6
 temps_preparation_min: 25
 temps_cuisson_min: 20
 contient: []
 tags: [gouter]
-image: ""
-
+image: chouquettes.jpg
 sections:
   - ingredients:
       - nom: farine mix pâtisserie Schär

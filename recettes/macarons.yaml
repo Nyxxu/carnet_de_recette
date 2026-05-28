@@ -6,8 +6,7 @@ temps_preparation_min: 0
 temps_cuisson_min: 0
 contient: []
 tags: [gouter]
-image: ""
-
+image: macarons.jpg
 sections:
   - ingredients:
       - nom: sucre glace

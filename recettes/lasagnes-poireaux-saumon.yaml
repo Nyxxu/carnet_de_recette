@@ -6,8 +6,7 @@ temps_preparation_min: 25
 temps_cuisson_min: 70
 contient: []
 tags: [familial]
-image: ""
-
+image: lasagnes-poireaux-saumon.jpg
 sections:
   - titre: Saumon
     ingredients:

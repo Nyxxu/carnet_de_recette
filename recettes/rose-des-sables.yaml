@@ -1,0 +1,27 @@
+titre: Rose des sables
+slug: rose-des-sables
+categorie: dessert
+portions: 12
+temps_preparation_min: 10
+temps_cuisson_min: 0
+contient: [gluten, lait]
+tags: [chocolat, gouter, sans-cuisson]
+image: rose-des-sables.jpg
+sections:
+  - ingredients:
+      - nom: chocolat noir
+        quantite: 200
+        unite: g
+      - nom: corn flakes
+        quantite: 100
+        unite: g
+      - nom: beurre
+        quantite: 60
+        unite: g
+    etapes:
+      - Faire fondre au bain-marie le beurre avec le chocolat noir coupé en morceaux. Bien mélanger.
+      - Dans un saladier, verser ce mélange sur les corn flakes et mélanger jusqu'à ce qu'ils soient bien enrobés.
+      - Sur une feuille de papier sulfurisé, former des petits tas à l'aide d'une cuillère à café.
+      - Réserver 1 heure minimum au réfrigérateur.
+
+notes: Contient gluten (corn flakes) et lactose (beurre) — version classique.

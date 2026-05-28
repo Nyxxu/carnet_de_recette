@@ -135,60 +135,72 @@
 {{end}}
 
 {{range .Groupes}}
-<section class="mb-12" data-categorie-section>
-    <h2 class="font-display text-3xl md:text-4xl font-black text-basilic-700 mb-6 inline-block squiggle">
+<section class="mb-8" data-categorie-section>
+    <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-black text-basilic-700 mb-4 sm:mb-6 inline-block squiggle">
         {{.Libelle}}
     </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
         {{range .Recettes}}
-        <a href="/recette/{{.Slug}}" data-titre="{{normaliser .Titre}}" class="group relative block bg-white rounded-2xl overflow-hidden border-2 border-stone-100 hover:border-basilic-300 hover:-translate-y-1 hover:shadow-sticker transition duration-200">
+        <a href="/recette/{{.Slug}}" data-titre="{{normaliser .Titre}}" class="group relative block rounded-xl overflow-hidden border-2 transition duration-200 hover:-translate-y-0.5 hover:shadow-sticker {{if .Contient}}bg-tomate-50 border-tomate-300 hover:border-tomate-500{{else}}bg-white border-stone-100 hover:border-basilic-300{{end}}">
             {{if .EstCoupDeCoeur}}
-            <div class="absolute top-3 right-3 z-10 bg-tomate-500 text-white rounded-full p-2 shadow-sticker rotate-12" title="Coup de cœur">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.5-9C1 9 2.5 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 5.5 4 4 7-2.5 4.5-9.5 9-9.5 9z"/></svg>
+            {{/* Coup-de-cœur : top-right par défaut, top-left si la place est déjà prise par le crâne allergène */}}
+            <div class="absolute z-10 bg-tomate-500 text-white rounded-full p-1 shadow-sticker rotate-12 {{if .Contient}}top-1.5 left-1.5{{else}}top-1.5 right-1.5{{end}}" title="Coup de cœur">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.5-9C1 9 2.5 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 5.5 4 4 7-2.5 4.5-9.5 9-9.5 9z"/></svg>
+            </div>
+            {{end}}
+            {{if .Contient}}
+            {{/* Crâne "dead cartoon" : signale clairement gluten/lactose, top-right, taille XL (3× le badge cœur) */}}
+            <div class="absolute top-1.5 right-1.5 z-20 bg-tomate-600 text-white rounded-full p-1.5 shadow-sticker -rotate-6" title="Contient : {{range $i, $a := .Contient}}{{if $i}}, {{end}}{{$a}}{{end}}">
+                <svg class="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
+                    <!-- Silhouette du crâne (blanc via currentColor) -->
+                    <path d="M12 2 C 6.5 2, 3 6, 3 11.5 C 3 14, 4 15.8, 5.5 17 L 5.5 20 C 5.5 20.5, 6 21, 6.5 21 L 8 21 L 8 19.3 L 9.5 19.3 L 9.5 21 L 10.5 21 L 10.5 19.3 L 13.5 19.3 L 13.5 21 L 14.5 21 L 14.5 19.3 L 16 19.3 L 16 21 L 17.5 21 C 18 21, 18.5 20.5, 18.5 20 L 18.5 17 C 20 15.8, 21 14, 21 11.5 C 21 6, 17.5 2, 12 2 Z"/>
+                    <!-- Yeux en X façon cartoon "dead" -->
+                    <g stroke="#7a1a0e" stroke-width="1.8" stroke-linecap="round" fill="none">
+                        <line x1="6.6" y1="9" x2="9.6" y2="12"/>
+                        <line x1="9.6" y1="9" x2="6.6" y2="12"/>
+                        <line x1="14.4" y1="9" x2="17.4" y2="12"/>
+                        <line x1="17.4" y1="9" x2="14.4" y2="12"/>
+                    </g>
+                    <!-- Petit nez triangulaire -->
+                    <path d="M 11 13.8 L 13 13.8 L 12 15.6 Z" fill="#7a1a0e"/>
+                    <!-- Petite bouche en zigzag (dents) -->
+                    <path d="M 9 16.8 L 10 17.6 L 11 16.8 L 12 17.6 L 13 16.8 L 14 17.6 L 15 16.8" stroke="#7a1a0e" stroke-width="0.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
             {{end}}
             {{if .Image}}
-            <div class="aspect-[4/3] overflow-hidden bg-citron-50">
-                <img src="/images/{{.Image}}" alt="{{.Titre}}"
+            <div class="aspect-square overflow-hidden bg-citron-50">
+                <img src="/images/{{thumb .Image}}" alt="{{.Titre}}"
                      class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                      loading="lazy">
             </div>
             {{else}}
-            <div class="aspect-[4/3] bg-gradient-to-br from-citron-100 via-basilic-100 to-basilic-200 flex items-center justify-center">
-                <svg viewBox="0 0 100 100" class="w-20 h-20 opacity-80" fill="none" stroke="#225f30" stroke-width="2.5" stroke-linecap="round">
+            <div class="aspect-square bg-gradient-to-br from-citron-100 via-basilic-100 to-basilic-200 flex items-center justify-center">
+                <svg viewBox="0 0 100 100" class="w-12 h-12 sm:w-14 sm:h-14 opacity-80" fill="none" stroke="#225f30" stroke-width="2.5" stroke-linecap="round">
                     <path d="M50 18 C 30 22, 16 38, 18 64 C 40 64, 60 52, 70 28 C 64 22, 58 18, 50 18 Z" fill="#5fb764"/>
                     <path d="M50 18 C 42 32, 32 48, 22 60" stroke-width="1.8"/>
                     <path d="M36 30 L 32 36 M 42 24 L 40 30 M 28 40 L 24 46" stroke-width="1.5"/>
                 </svg>
             </div>
             {{end}}
-            <div class="p-4">
-                <h3 class="font-display text-xl font-black mb-2 text-stone-900 group-hover:text-basilic-700 transition leading-tight">
+            <div class="p-2.5 sm:p-3">
+                <h3 class="font-display text-sm sm:text-base font-bold mb-1 text-stone-900 group-hover:text-basilic-700 transition leading-tight line-clamp-2">
                     {{.Titre}}
                 </h3>
-                <div class="flex flex-wrap gap-x-3 gap-y-1 text-sm text-stone-500 font-medium">
+                <div class="flex flex-wrap gap-x-2 text-xs text-stone-500 font-medium">
                     {{if gt .TempsTotalMin 0}}
-                    <span class="inline-flex items-center gap-1">
-                        <svg class="w-4 h-4 text-basilic-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-                        {{.TempsTotalMin}} min
+                    <span class="inline-flex items-center gap-0.5">
+                        <svg class="w-3 h-3 text-basilic-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                        {{.TempsTotalMin}}&nbsp;min
                     </span>
                     {{end}}
                     {{if gt .Portions 0}}
-                    <span class="inline-flex items-center gap-1">
-                        <svg class="w-4 h-4 text-basilic-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M3 19c0-3 3-5 6-5s6 2 6 5"/><circle cx="17" cy="9" r="2.5"/><path d="M15 18c0-2 2-3.5 4-3.5s2.5 1 2.5 2.5"/></svg>
-                        {{.Portions}} pers.
+                    <span class="hidden sm:inline-flex items-center gap-0.5">
+                        <svg class="w-3 h-3 text-basilic-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M3 19c0-3 3-5 6-5s6 2 6 5"/><circle cx="17" cy="9" r="2.5"/><path d="M15 18c0-2 2-3.5 4-3.5s2.5 1 2.5 2.5"/></svg>
+                        {{.Portions}}&nbsp;pers.
                     </span>
                     {{end}}
                 </div>
-                {{if .Tags}}
-                <div class="mt-3 flex flex-wrap gap-1">
-                    {{range .Tags}}
-                    {{if ne . "coup-de-coeur"}}
-                    <span class="text-xs bg-citron-100 text-citron-800 px-2 py-0.5 rounded-full font-bold">{{.}}</span>
-                    {{end}}
-                    {{end}}
-                </div>
-                {{end}}
             </div>
         </a>
         {{end}}

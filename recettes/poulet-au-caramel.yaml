@@ -6,8 +6,7 @@ temps_preparation_min: 15
 temps_cuisson_min: 25
 contient: []
 tags: [familial]
-image: ""
-
+image: poulet-au-caramel.jpg
 sections:
   - titre: Préparation de la viande
     ingredients:

@@ -1,0 +1,34 @@
+titre: Flan pâtissier
+slug: flan-patissier
+categorie: dessert
+portions: 8
+temps_preparation_min: 15
+temps_cuisson_min: 35
+contient: [gluten, lait]
+tags: [gouter, classique]
+image: flan-patissier.jpg
+sections:
+  - ingredients:
+      - nom: oeufs
+        quantite: 4
+      - nom: sucre
+        quantite: 150
+        unite: g
+      - nom: maïzena
+        quantite: 90
+        unite: g
+      - nom: lait
+        quantite: 1
+        unite: L
+      - nom: gousse de vanille
+        quantite: 1
+        details: optionnelle
+    etapes:
+      - Faire bouillir le lait (avec la gousse de vanille fendue).
+      - Pendant ce temps, bien battre les oeufs, puis ajouter la maïzena et le sucre de façon à avoir un mélange homogène.
+      - Ajouter le lait bouillant.
+      - Faire cuire la préparation à feu doux sans cesser de remuer jusqu'à avoir un mélange légèrement épais.
+      - Verser dans un moule.
+      - Enfourner environ 35 minutes à 180°C.
+
+notes: Contient gluten et lactose — version classique, à ne pas servir aux personnes allergiques.

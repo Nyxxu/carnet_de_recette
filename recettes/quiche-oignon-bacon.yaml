@@ -6,8 +6,7 @@ temps_preparation_min: 15
 temps_cuisson_min: 45
 contient: []
 tags: [familial]
-image: ""
-
+image: quiche-oignon-bacon.jpg
 sections:
   - ingredients:
       - nom: pâte feuilletée sans gluten

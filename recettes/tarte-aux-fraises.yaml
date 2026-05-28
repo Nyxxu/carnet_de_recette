@@ -6,8 +6,7 @@ temps_preparation_min: 0
 temps_cuisson_min: 0
 contient: []
 tags: [ete, gouter]
-image: ""
-
+image: tarte-aux-fraises.jpg
 sections:
   - ingredients: []
     etapes: []

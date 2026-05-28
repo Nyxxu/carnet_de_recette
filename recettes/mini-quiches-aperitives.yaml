@@ -6,8 +6,7 @@ temps_preparation_min: 20
 temps_cuisson_min: 20
 contient: []
 tags: [apero]
-image: ""
-
+image: mini-quiches-aperitives.jpg
 sections:
   - ingredients:
       - nom: pâtes feuilletées sans gluten

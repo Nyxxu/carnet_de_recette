@@ -1,13 +1,12 @@
-titre: Choux à la crème sans gluten
-slug: choux-a-la-creme-sans-gluten
+titre: Choux à la crème
+slug: choux-a-la-creme
 categorie: dessert
 portions: 6
 temps_preparation_min: 30
 temps_cuisson_min: 25
 contient: []
 tags: [gouter]
-image: ""
-
+image: choux-a-la-creme.jpg
 sections:
   - titre: Pâte à choux
     ingredients:

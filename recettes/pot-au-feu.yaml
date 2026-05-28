@@ -6,8 +6,7 @@ temps_preparation_min: 25
 temps_cuisson_min: 60
 contient: []
 tags: [familial, hiver, batch-cooking]
-image: ""
-
+image: pot-au-feu.jpg
 sections:
   - ingredients:
       - nom: paleron de boeuf

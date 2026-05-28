@@ -22,6 +22,38 @@
     </div>
     {{end}}
 
+    {{if .Contient}}
+    <aside class="mb-8 bg-tomate-100 border-2 border-tomate-400 rounded-2xl p-5 md:p-6 shadow-sticker" role="alert" aria-label="Avertissement allergènes">
+        <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 bg-tomate-600 text-white rounded-full p-2 shadow-sticker -rotate-6">
+                <svg class="w-9 h-9 md:w-11 md:h-11" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2 C 6.5 2, 3 6, 3 11.5 C 3 14, 4 15.8, 5.5 17 L 5.5 20 C 5.5 20.5, 6 21, 6.5 21 L 8 21 L 8 19.3 L 9.5 19.3 L 9.5 21 L 10.5 21 L 10.5 19.3 L 13.5 19.3 L 13.5 21 L 14.5 21 L 14.5 19.3 L 16 19.3 L 16 21 L 17.5 21 C 18 21, 18.5 20.5, 18.5 20 L 18.5 17 C 20 15.8, 21 14, 21 11.5 C 21 6, 17.5 2, 12 2 Z"/>
+                    <g stroke="#7a1a0e" stroke-width="1.8" stroke-linecap="round" fill="none">
+                        <line x1="6.6" y1="9" x2="9.6" y2="12"/>
+                        <line x1="9.6" y1="9" x2="6.6" y2="12"/>
+                        <line x1="14.4" y1="9" x2="17.4" y2="12"/>
+                        <line x1="17.4" y1="9" x2="14.4" y2="12"/>
+                    </g>
+                    <path d="M 11 13.8 L 13 13.8 L 12 15.6 Z" fill="#7a1a0e"/>
+                    <path d="M 9 16.8 L 10 17.6 L 11 16.8 L 12 17.6 L 13 16.8 L 14 17.6 L 15 16.8" stroke="#7a1a0e" stroke-width="0.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="flex-1 min-w-0">
+                <h2 class="font-display text-xl md:text-2xl font-black text-tomate-800 leading-tight mb-1">
+                    Attention aux allergènes
+                </h2>
+                <p class="text-tomate-900 text-base md:text-lg">
+                    Cette recette contient&nbsp;:
+                    <strong class="font-black">{{range $i, $a := .Contient}}{{if $i}}, {{end}}{{$a}}{{end}}</strong>.
+                </p>
+                <p class="text-tomate-700 text-sm mt-1">
+                    Hors du régime sans gluten et sans lactose habituel du carnet — à éviter pour les personnes allergiques.
+                </p>
+            </div>
+        </div>
+    </aside>
+    {{end}}
+
     <header class="mb-8">
         <div class="flex items-center gap-2 mb-3 flex-wrap">
             <p class="inline-block bg-basilic-100 text-basilic-800 font-bold text-xs uppercase tracking-[0.18em] px-3 py-1 rounded-full">
@@ -57,15 +89,12 @@
             {{end}}
         </div>
 
-        {{if or .Tags .Contient}}
+        {{if .Tags}}
         <div class="mt-5 flex flex-wrap gap-2">
             {{range .Tags}}
             {{if ne . "coup-de-coeur"}}
             <span class="text-xs font-bold bg-citron-100 text-citron-800 px-3 py-1 rounded-full">{{.}}</span>
             {{end}}
-            {{end}}
-            {{range .Contient}}
-            <span class="text-xs font-bold bg-tomate-100 text-tomate-700 px-3 py-1 rounded-full">contient {{.}}</span>
             {{end}}
         </div>
         {{end}}

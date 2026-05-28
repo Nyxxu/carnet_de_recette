@@ -6,8 +6,7 @@ temps_preparation_min: 20
 temps_cuisson_min: 15
 contient: []
 tags: [ete]
-image: ""
-
+image: salade-vietnamienne.jpg
 sections:
   - titre: Base
     ingredients:

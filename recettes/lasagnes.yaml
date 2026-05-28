@@ -6,8 +6,7 @@ temps_preparation_min: 30
 temps_cuisson_min: 30
 contient: []
 tags: [familial]
-image: ""
-
+image: lasagnes.jpg
 sections:
   - titre: Garniture viande
     ingredients:

@@ -6,8 +6,7 @@ temps_preparation_min: 15
 temps_cuisson_min: 45
 contient: []
 tags: [gouter]
-image: ""
-
+image: invisible-aux-pommes.jpg
 sections:
   - ingredients:
       - nom: farine mix pâtisserie Schär

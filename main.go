@@ -7,6 +7,8 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/Nyxxu/carnet-de-recette/internal/handlers"
@@ -71,6 +73,15 @@ func chargerTemplates(systeme fs.FS) (map[string]*template.Template, error) {
 		"normaliser": recettes.Normaliser,
 		// version() dans les templates retourne la version courante du binaire.
 		"version": func() string { return version },
+		// thumb("lasagnes.jpg") → "lasagnes-thumb.jpg". Utilisé sur la page
+		// d'accueil pour charger la version 600x600 au lieu du hero 1200x675.
+		"thumb": func(filename string) string {
+			if filename == "" {
+				return ""
+			}
+			ext := filepath.Ext(filename)
+			return strings.TrimSuffix(filename, ext) + "-thumb" + ext
+		},
 	}
 
 	pages := map[string]string{

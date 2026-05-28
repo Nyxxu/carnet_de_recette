@@ -6,8 +6,7 @@ temps_preparation_min: 60
 temps_cuisson_min: 15
 contient: []
 tags: [gouter]
-image: ""
-
+image: brioche.jpg
 sections:
   - ingredients:
       - nom: mix pain Schär

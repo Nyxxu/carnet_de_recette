@@ -6,8 +6,7 @@ temps_preparation_min: 15
 temps_cuisson_min: 4
 contient: []
 tags: [apero]
-image: ""
-
+image: croquettes-de-thon.jpg
 sections:
   - ingredients:
       - nom: thon au naturel en boîte

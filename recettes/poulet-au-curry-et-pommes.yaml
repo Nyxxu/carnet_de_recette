@@ -6,8 +6,7 @@ temps_preparation_min: 15
 temps_cuisson_min: 50
 contient: []
 tags: [familial]
-image: ""
-
+image: poulet-au-curry-et-pommes.jpg
 sections:
   - titre: Plat principal
     ingredients:

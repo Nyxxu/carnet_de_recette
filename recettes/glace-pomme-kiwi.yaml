@@ -1,0 +1,32 @@
+titre: Glace pomme-kiwi
+slug: glace-pomme-kiwi
+categorie: glace
+portions: 4
+temps_preparation_min: 10
+temps_cuisson_min: 20
+contient: []
+tags: [ete, magimix, fruits]
+image: glace-pomme-kiwi.jpg
+
+sections:
+  - ingredients:
+      - nom: pommes
+        quantite: 2
+        details: bio, variété Juliet
+      - nom: kiwis
+        quantite: 2
+      - nom: eau
+        quantite: 10
+        unite: cl
+      - nom: sirop d'agave
+        quantite: 5
+        unite: cl
+        details: à ajuster selon le goût
+    etapes:
+      - Éplucher les pommes et les kiwis, les couper en gros morceaux.
+      - Mixer les fruits.
+      - Ajouter l'eau et le sirop d'agave, mixer de nouveau (sucrer en fonction du goût).
+      - Verser la préparation dans le bol de la Magimix et sélectionner le mode "glace à l'italienne".
+      - Servir quand la glace a commencé à se séparer du bord et est solide mais reste crémeuse (environ 20 minutes).
+
+notes: Réalisée à la Magimix Gelato Expert.

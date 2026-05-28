@@ -1,0 +1,33 @@
+titre: Glace framboise
+slug: glace-framboise
+categorie: glace
+portions: 4
+temps_preparation_min: 5
+temps_cuisson_min: 20
+contient: []
+tags: [ete, magimix, fruits]
+image: glace-framboise.jpg
+
+sections:
+  - ingredients:
+      - nom: framboises
+        quantite: 25
+        details: fraîches ou congelées (haut de gamme si congelées)
+      - nom: crème de coco
+        quantite: 200
+        unite: ml
+        details: 1 brique
+      - nom: lait de riz
+        quantite: 15
+        unite: cl
+      - nom: sirop d'agave
+        quantite: 5
+        unite: cl
+        details: à ajuster selon le goût
+    etapes:
+      - Mixer les framboises avec la crème de coco.
+      - Ajouter le lait de riz et le sirop d'agave, mixer de nouveau (ajuster le sucre selon le goût).
+      - Verser la préparation dans le bol de la Magimix et sélectionner le mode "glace à l'italienne".
+      - Servir quand la glace a commencé à se séparer du bord et est solide mais reste crémeuse (environ 20 minutes).
+
+notes: Réalisée à la Magimix Gelato Expert.

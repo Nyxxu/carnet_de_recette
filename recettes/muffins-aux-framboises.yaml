@@ -6,8 +6,7 @@ temps_preparation_min: 10
 temps_cuisson_min: 20
 contient: []
 tags: [gouter]
-image: ""
-
+image: muffins-aux-framboises.jpg
 sections:
   - ingredients:
       - nom: farine mix pâtisserie Schär

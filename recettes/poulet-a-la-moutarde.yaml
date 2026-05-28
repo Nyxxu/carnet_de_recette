@@ -6,8 +6,7 @@ temps_preparation_min: 8
 temps_cuisson_min: 12
 contient: []
 tags: [rapide, familial]
-image: ""
-
+image: poulet-a-la-moutarde.jpg
 sections:
   - ingredients:
       - nom: filets de poulet

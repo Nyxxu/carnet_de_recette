@@ -6,8 +6,7 @@ temps_preparation_min: 15
 temps_cuisson_min: 11
 contient: []
 tags: [accompagnement]
-image: ""
-
+image: frites.jpg
 sections:
   - ingredients:
       - nom: pommes de terre
